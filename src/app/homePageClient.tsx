@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import PillNav from "@/components/PillNav";
 import GridDistortion from "@/components/GridDistortion";
 import Counter from "@/components/Counter";
@@ -8,7 +7,7 @@ import SplitText from "@/components/SplitText";
 import { useCounter } from "@/hooks/useCounter";
 
 export default function HomePageClient() {
-  const { count, isComplete } = useCounter({
+  const { count } = useCounter({
     startValue: 0,
     endValue: 350,
     duration: 6000, // 6 seconds
